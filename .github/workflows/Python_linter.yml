@@ -9,7 +9,7 @@ jobs:
     - name: Check Syntax
       uses: cclauss/Find-Python-syntax-errors-action@master      
     - name: Run py file
-      run: python hello_world.py
+      run: python welcome.py
       shell: sh
     - name: Dir
       run: pwd
