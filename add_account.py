@@ -2,11 +2,11 @@ import pymongo
 from datetime import datetime
 
 #Connection
-client = pymongo.MongoClient("xxxx")
+client = pymongo.MongoClient("xxxx"
 db = client["StockExApp"]
 collection = db["Accounts"]
 
-collection.create_index("account_id", unique=True)
+collection.create_index("account_id", unique=True
 
 # Replace this with your Unix timestamp
 current_timestamp = datetime.now().timestamp()
