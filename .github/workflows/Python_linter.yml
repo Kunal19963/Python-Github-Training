@@ -1,8 +1,15 @@
 name: Python Linter
 on: push
 jobs:
-  Python-Syntax-checker:
+  Python-Syntax-checker:  
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: cclauss/Find-Python-syntax-errors-action@master
+    - name: Check out    
+      uses: actions/checkout@v2
+    - name: Check Syntax
+      uses: cclauss/Find-Python-syntax-errors-action@master      
+    - name: Run py file
+      run: python hello_world.py
+      shell: sh
+    - name: Dir
+      run: pwd
