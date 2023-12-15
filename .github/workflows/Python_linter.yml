@@ -1,8 +1,7 @@
-name: Deploy to Kuber
+name: Python Linter
 on: push
-name: Lint Python
 jobs:
-  lint-python:
+  Python-Syntax-checker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
